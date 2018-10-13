@@ -1,0 +1,14 @@
+net: "./train.prototxt"
+display: 500
+base_lr:  1e-6
+average_loss: 2000
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 50000
+stepvalue: 200000
+max_iter: 2400000
+momentum: 0.95
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "./result/pretrain"
+solver_mode: GPU 
