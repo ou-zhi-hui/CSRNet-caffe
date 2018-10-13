@@ -1,0 +1,28 @@
+[ RUN      ] ScaleLayerTest/2.TestGradientBroadcastMiddle
+[       OK ] ScaleLayerTest/2.TestGradientBroadcastMiddle (760 ms)
+[ RUN      ] ScaleLayerTest/2.TestForwardEltwiseInPlace
+[       OK ] ScaleLayerTest/2.TestForwardEltwiseInPlace (0 ms)
+[----------] 22 tests from ScaleLayerTest/2 (6442 ms total)
+
+[----------] 4 tests from CuDNNDeconvolutionLayerTest/3, where TypeParam = caffe::GPUDevice<double>
+[ RUN      ] CuDNNDeconvolutionLayerTest/3.TestSimpleCuDNNDeconvolution
+[       OK ] CuDNNDeconvolutionLayerTest/3.TestSimpleCuDNNDeconvolution (3 ms)
+[ RUN      ] CuDNNDeconvolutionLayerTest/3.TestNDAgainst2D
+[       OK ] CuDNNDeconvolutionLayerTest/3.TestNDAgainst2D (84 ms)
+[ RUN      ] CuDNNDeconvolutionLayerTest/3.TestGradient
+[       OK ] CuDNNDeconvolutionLayerTest/3.TestGradient (10878 ms)
+[ RUN      ] CuDNNDeconvolutionLayerTest/3.TestSetup
+[       OK ] CuDNNDeconvolutionLayerTest/3.TestSetup (6 ms)
+[----------] 4 tests from CuDNNDeconvolutionLayerTest/3 (10972 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2199 tests from 285 test cases ran. (425283 ms total)
+[  PASSED  ] 2195 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] LayerFactoryTest/0.TestCreateLayer, where TypeParam = caffe::CPUDevice<float>
+[  FAILED  ] LayerFactoryTest/1.TestCreateLayer, where TypeParam = caffe::CPUDevice<double>
+[  FAILED  ] LayerFactoryTest/2.TestCreateLayer, where TypeParam = caffe::GPUDevice<float>
+[  FAILED  ] LayerFactoryTest/3.TestCreateLayer, where TypeParam = caffe::GPUDevice<double>
+ 4 FAILED TESTS
+Makefile:532: recipe for target 'runtest' failed
+make: *** [runtest] Error 1
