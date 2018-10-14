@@ -17,7 +17,8 @@ make -j8
 ```
 # 
 ## prepare data
-### download Shanghai dataset: https://drive.google.com/file/d/16dhJn7k4FWVwByRsQAEpl9lwjuV03jVI/view
+### download Shanghai dataset
+https://drive.google.com/file/d/16dhJn7k4FWVwByRsQAEpl9lwjuV03jVI/view
 ### generate data list
 ```
 1. cd readPicList
@@ -40,6 +41,7 @@ cd ../bin
 ## convert data(.jpg) to lmdb
 `sh create_lmdb.sh`  (modify the corresponding path)
 ## download pretrain model vgg16
+http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
 ## train
 `sh train_CSRNet.sh` (modify the corresponding path)
 ## test
