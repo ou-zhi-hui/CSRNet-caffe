@@ -25,7 +25,7 @@ make -j8
 3. python3 addSuffix.py --inputfile train_list.txt --outputfile_csv label.list --outputfile_jpg img_train.list
 ```
 ### generate density map
-copy train_list to `generate_density` folder and modify `create_gt_train_set.m` path,the generated density map is saved in `ground_truth_csv` folder.
+copy `readPicList/train_list` to `generate_density` folder and modify `create_gt_train_set.m` corresponding path, then `run create_gt_train_set.m`, the generated density map will be saved in `ground_truth_csv` folder.
 ## convert ground_truth(.csv) to lmdb
 note:**modify the corresponding include and link path in CMakeList file**
 ```
