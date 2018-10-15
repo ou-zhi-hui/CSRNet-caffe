@@ -23,7 +23,7 @@ https://drive.google.com/file/d/16dhJn7k4FWVwByRsQAEpl9lwjuV03jVI/view
 ```
 1. cd readPicList
 2. python3 readPicList.py -i ../ShanghaiTech_Crowd_Counting_Dataset/part_A_final/train_data/images -o train_list.txt 
-3. python3 addSuffix.py --inputfile train_list.txt --outputfile_csv label.list --outputfile_jpg img_train.list
+3. python3 addSuffix.py --inputfile train_list.txt --outputfile_csv label.txt --outputfile_jpg img_train.txt
 ```
 ### generate density map
 copy `readPicList/train_list.txt` to `generate_density` folder and modify `create_gt_train_set.m` corresponding path, then `run create_gt_train_set.m`, the generated density map will be saved in `ground_truth_csv` folder.
