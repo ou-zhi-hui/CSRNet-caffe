@@ -7,7 +7,7 @@ OpenCV (2.4.13)
 ```
 # How to use?
 ## caffe build
-Because add lmdb2txt tool in caffe
+Because add lmdb2txt tool to caffe
 ```
 cd caffe-CSRNet
 mkdir build
